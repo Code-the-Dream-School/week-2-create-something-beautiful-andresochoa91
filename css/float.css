@@ -1,5 +1,145 @@
 * {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  line-height: 0.8;
+  z-index: 1;
+}
+
+footer {
+  padding: 10px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.container {
+  position: relative;
+}
+
+.ta-center { /* text align center */
+  text-align: center;
+}
+
+.inline { /* display inline */
+  display: inline;
+}
+
+.block { /* display block */
+  display: block;
+}
+
+.inline-block { /* display inline block */
+  display: inline-block;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.p-relative { /* position relative */
+  position: relative;
+}
+
+.p-absolute { /* position absolute */
+  position: absolute;
+}
+
+.p-fixed { /* position fixed */
+  position: fixed;
+}
+
+.p-sticky {
+  position: sticky;
+  top: 0px;
+}
+
+.mw { /* max width */
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.thumbnail {
+  height: 150px;
+  padding: 0;
+  margin: 0 10px 10px 10px;
+
+}
+
+#main-navbar h1 {
+  margin: 20px;
+}
+
+#profile-pic {
+  right: 10px;
+  top: 9px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px #f00 solid;
+
+}
+
+#navbar-ul {
+  left: 180px;
+}
+
+#navbar-ul li {
+  padding: 27px 10px 26px;
+  background-color: #aaa;
+}
+
+#main-container {
+  background-color: #ff6;
+}
+
+#main-navbar {
+  background-color: #ddd;
+}
+
+#showcase {
+  height: 300px;
+  background: url("https://get.pxhere.com/photo/background-calm-clouds-daylight-dock-environment-grass-lake-landscape-looking-man-mountain-mountains-outdoors-person-reflections-rocks-scenery-scenic-serene-sitting-sky-tranquil-trees-view-water-wooden-woods-1563785.jpg") no-repeat center/cover;
+}
+
+#showcase-content {
+  background-color: blue;
+  color: #fff;
+  font-size: 1.3em;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+article {
+  overflow: auto;
+  padding: 15px;
+}
+
+article h1 {
+
+}
+
+#article1 {
+  background-color: #f00;
+}
+
+#article2 {
+  background-color: #0f0;
+}

@@ -7,10 +7,60 @@
   <meta name="author" content="name">
   <meta name="description" content="description here">
   <meta name="keywords" content="keywords,here">
+  <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/float.css" type="text/css">
   </head>
   <body>
+    <div class="container" id="main-container">
 
+      <header class="mw p-sticky">
+        <nav class="container block" id="main-navbar">
+          <div class="container">
+            <h1 class="inline-block">FLOATS</h1>
+            <ul class="container inline-block p-absolute" id="navbar-ul">
+              <li class="inline-block"><a href="#">Example1</a></li>
+              <li class="inline-block"><a href="#">Example2</a></li>
+              <li class="inline-block"><a href="#">Example3</a></li>
+              <li class="inline-block"><a href="#">Example4</a></li>
+            </ul>
+            <img src="./images/profilePicture.jpg" alt="pic" class="float-right p-absolute"  id="profile-pic">
+          </div>
+        </nav>
+      </header>
+
+      <main class="container">
+        <section class="container ta-center" id="showcase">
+          <div class="container mw d-absolute" id="showcase-content">
+            <h1 class="block">CODE THE DREAM</h1>
+            <p class="block">Lorem ipsum dolor sit amet consectetur adipisicing elit.Voluptatem, dolorem laudantium? Quas nemo inventore amet illum quaenecessitatibus, ab beatae?</p>
+          </div>
+        </section class="container">
+        
+        <section class="container mw" id="articles">
+          <article class="container" id="article1">
+            <div class="container">
+              <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fstatic.standard.co.uk%2Fs3fs-public%2Fthumbnails%2Fimage%2F2016%2F02%2F17%2F10%2Fhomersimpson1702a.jpg&f=1&nofb=1" alt="homer" class="thumbnail float-right">
+              <h1>Article 1</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, quasi perferendis dolore iste iusto commodi quidem illum labore quis, aut officiis consequatur praesentium dignissimos quas impedit odit ab eius ipsam assumenda quia, consectetur nostrum. Eveniet cum hic, dolorem dolorum eaque temporibus et exercitationem sit perferendis vel soluta placeat incidunt amet!</p>
+            </div>
+          </article>
+          <article class="container" id="article2">
+            <div class="container">
+              <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fstatic.standard.co.uk%2Fs3fs-public%2Fthumbnails%2Fimage%2F2016%2F02%2F17%2F10%2Fhomersimpson1702a.jpg&f=1&nofb=1" alt="homer" class="thumbnail float-left">
+              <h1>Article 2</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, quasi perferendis dolore iste iusto commodi quidem illum labore quis, aut officiis consequatur praesentium dignissimos quas impedit odit ab eius ipsam assumenda quia, consectetur nostrum. Eveniet cum hic, dolorem dolorum eaque temporibus et exercitationem sit perferendis vel soluta placeat incidunt amet!</p>
+            </div>
+          </article>
+        </section>
+        
+
+      </main>
+
+    </div>
+    <footer class="container ta-center">
+      <address>777 Heaven St, San Francisco, CA.</address>
+      <p>&copy; 2020 CTD</p>
+    </footer>
   <script src="index.js" type="text/javascript"></script>
   </body>
 </html>
