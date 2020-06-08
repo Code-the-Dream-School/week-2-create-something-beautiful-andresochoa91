@@ -5,9 +5,25 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  background-color: #b1cbbb;
+}
+
 a {
   text-decoration: none;
-  color: black;
+}
+
+button {
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f7786b;
+}
+
+button:hover {
+  background-color: #f7cac9;
 }
 
 header {
@@ -16,6 +32,8 @@ header {
 }
 
 footer {
+  background-color: #034f84;
+  color: #fff;
   padding: 10px;
 }
 
@@ -69,23 +87,25 @@ h1 {
 }
 
 .mw { /* max width */
-  width: 90%;
-  max-width: 1100px;
+  width: 95%;
+  max-width: 1200px;
   margin: auto;
 }
 
 .thumbnail {
-  height: 150px;
+  height: 100%;
   padding: 0;
   margin: 0 10px 10px 10px;
 
 }
 
 .card {
-  font-size: .8em;
+  background-color: #87bdd8;
+  color: #034f84;
+  font-size: .9em;
   display: inline-block;
   border: 1px #777 solid;
-  width: 220px;
+  width: 270px;
   margin: 10px;
 }
 
@@ -98,47 +118,71 @@ h1 {
   margin: 0;
 }
 
-#main-navbar h1 {
+.card-content h2 {
+  margin: 0 auto 9px;
+}
+
+.card-content p {
+  text-align: justify;
+  margin-bottom: 12px;
+}
+
+.card button {
+  width: 100%;
+  border-radius: 0;
+}
+
+#main-navbar h2 {
   margin: 20px;
+  color: #f7786b;
 }
 
 #profile-pic {
   right: 10px;
   top: 9px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  border: 1px #f00 solid;
-
+  border: 1px #f7cac9 solid;
 }
 
 #navbar-ul {
   left: 180px;
 }
 
-#navbar-ul li {
-  padding: 26px 10px;
-  background-color: #aaa;
+#navbar-ul li a {
+  display: inline-block;
+  padding: 22px 10px;
+  color: #f7cac9;
+}
+
+#navbar-ul li a:hover {
+  background-color: #92a8d1;
+  color: #f0f0f0;
+  border-bottom: 3px #c94c4c solid;
 }
 
 #main-container {
-  background-color: #ff6;
   min-height: calc(100vh - 57px);
 }
 
 #main-navbar {
-  background-color: #ddd;
+  background-color: #034f84;
 }
 
 #showcase {
-  height: 300px;
+  height: 500px;
   background: url("https://get.pxhere.com/photo/background-calm-clouds-daylight-dock-environment-grass-lake-landscape-looking-man-mountain-mountains-outdoors-person-reflections-rocks-scenery-scenic-serene-sitting-sky-tranquil-trees-view-water-wooden-woods-1563785.jpg") no-repeat center/cover;
 }
 
+#showcase p {
+  margin-top: 50px;
+}
+
 #showcase-content {
-  background-color: blue;
   color: #fff;
-  font-size: 1.3em;
+  text-shadow: 5px 5px 3px #034f84, -5px 5px 3px #034f84;
+  font-size: 1.5em;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -150,19 +194,51 @@ h1 {
 }
 
 article {
+  font-size: 1.em;
+  color: #f7cac9;
+  background-color: #034f84;
   overflow: auto;
-  padding: 15px;
-  margin-top: 20px;
+  padding: 30px;
+  margin-top: 80px;
+  box-shadow: 15px 15px 15px #888888,
+              -15px -15px 15px #888888,
+              15px -15px 15px #888888,
+              -15px 15px 15px #888888;
 }
 
-#article1 {
-  background-color: #f00;
+article p {
+  margin: 20px;
+  text-align: justify;
 }
 
-#article2 {
-  background-color: #0f0;
+article img {
+  margin: auto 20px !important;
+  width: 45%;
+}
+
+article button {
+  margin: 20px;
+}
+
+.article-content {
+  width: 50%;
 }
 
 #cards {
-  margin: 50px auto;
+  background-color: #034f84;
+  margin: 120px auto;
+  padding: 50px 0;
+  box-shadow: 15px 15px 15px #888888,
+              -15px -15px 15px #888888,
+              15px -15px 15px #888888,
+              -15px 15px 15px #888888;
 }
+
+#cards #act-heading {
+  margin-bottom: 50px;
+  font-size: 2em;
+  color: #fff;
+  text-shadow: 3px 3px 2px #034f84;
+}
+
+
