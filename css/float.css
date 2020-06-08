@@ -9,8 +9,17 @@ body {
   background-color: #b1cbbb;
 }
 
+#main-container {
+  min-height: calc(100vh - 57px);
+}
+
 a {
   text-decoration: none;
+  color: #f7cac9;
+}
+
+.container {
+  position: relative;
 }
 
 .btn {
@@ -26,33 +35,8 @@ a {
   background-color: #f7cac9;
 }
 
-header {
-  line-height: 0.8;
-  z-index: 1;
-  border-bottom: 1px #f7cac9 solid;
-}
-
-footer {
-  text-align: center;
-  background-color: #034f84;
-  color: #f7cac9;
-  padding: 10px;
-}
-
-.container {
-  position: relative;
-}
-
-.inline { /* display inline */
-  display: inline;
-}
-
 .block { /* display block */
   display: block;
-}
-
-.inline-block { /* display inline block */
-  display: inline-block;
 }
 
 .float-left {
@@ -63,23 +47,6 @@ footer {
   float: right;
 }
 
-.p-relative { /* position relative */
-  position: relative;
-}
-
-.p-absolute { /* position absolute */
-  position: absolute;
-}
-
-.p-fixed { /* position fixed */
-  position: fixed;
-}
-
-.p-sticky {
-  position: sticky;
-  top: 0px;
-}
-
 .mw { /* max width */
   width: 95%;
   max-width: 1200px;
@@ -88,7 +55,6 @@ footer {
 
 .thumbnail {
   height: 100%;
-  padding: 0;
   margin: 0 10px 10px 10px;
 }
 
@@ -126,12 +92,30 @@ footer {
   border-radius: 0;
 }
 
-#main-navbar h2 {
+header {
+  position: sticky;
+  top: 0;
+  line-height: 0.8;
+  z-index: 1;
+  border-bottom: 1px #f7cac9 solid;
+}
+
+header nav {
+  background-color: #034f84;
+  display: block;
+}
+
+header nav h2, header nav ul {
+  display: inline-block;
+}  
+
+header nav h2 {
   margin: 20px;
   color: #f7786b;
 }
 
-#profile-pic {
+header nav img {
+  position: absolute;
   right: 10px;
   top: 9px;
   width: 40px;
@@ -140,25 +124,25 @@ footer {
   border: 1px #f7cac9 solid;
 }
 
-#navbar-ul li a {
-  display: inline-block;
-  padding: 22px 10px;
-  color: #f7cac9;
+header nav ul {
+  position: absolute;
 }
 
-#navbar-ul li a:hover {
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  display: inline-block;
+  padding: 22px 10px;
+}
+
+header nav ul li a:hover {
   background-color: #92a8d1;
   color: #f0f0f0;
   border-bottom: 3px #c94c4c solid;
 }
 
-#main-container {
-  min-height: calc(100vh - 57px);
-}
-
-#main-navbar {
-  background-color: #034f84;
-}
 
 #showcase {
   text-align: center;
@@ -227,12 +211,17 @@ article button {
 }
 
 #cards #act-heading {
-  margin-bottom: 50px;
+  margin: 20px auto 40px;
   font-size: 2em;
   color: #f7cac9;
-  text-shadow: 3px 3px 2px #034f84;
 }
 
+footer {
+  text-align: center;
+  background-color: #034f84;
+  color: #f7cac9;
+  padding: 10px;
+}
 
 @media (max-width: 910px) {
 
@@ -243,7 +232,7 @@ article button {
   .article-content,
   article img {
     float: none !important;
-    width: 100% !important;
+    width: 100%;
   }
 
   article img {
@@ -270,7 +259,6 @@ article button {
 }
 
 @media (max-width: 768px) {
-
   article {
     font-size: 1em;
   }
@@ -283,19 +271,18 @@ article button {
   }
 
   header h2 {
-    display: inline;
     margin: 5px !important;
     padding: 2px !important;
   }
 
-  ul {
+  header nav ul {
     display: block !important;
     position: relative !important;
     width: 100%;
     margin-left: 0;
   }
 
-  ul li a {
+  header nav ul li a {
     padding: 10px !important;
     margin: 0 !important;
   }
@@ -309,7 +296,7 @@ article button {
 
 @media (max-width: 500px) {
 
-  ul, li, a {
+  header nav ul, header nav ul li, header nav ul a {
     display: block !important;
   }
 
