@@ -81,6 +81,23 @@ h1 {
 
 }
 
+.card {
+  font-size: .8em;
+  display: inline-block;
+  border: 1px #777 solid;
+  width: 220px;
+  margin: 10px;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card img {
+  width: 100%;
+  margin: 0;
+}
+
 #main-navbar h1 {
   margin: 20px;
 }
@@ -100,12 +117,13 @@ h1 {
 }
 
 #navbar-ul li {
-  padding: 27px 10px 26px;
+  padding: 26px 10px;
   background-color: #aaa;
 }
 
 #main-container {
   background-color: #ff6;
+  min-height: calc(100vh - 57px);
 }
 
 #main-navbar {
@@ -127,13 +145,14 @@ h1 {
   transform: translateY(-50%);
 }
 
+#articles {
+  margin: 50px auto;
+}
+
 article {
   overflow: auto;
   padding: 15px;
-}
-
-article h1 {
-
+  margin-top: 20px;
 }
 
 #article1 {
@@ -142,4 +161,8 @@ article h1 {
 
 #article2 {
   background-color: #0f0;
+}
+
+#cards {
+  margin: 50px auto;
 }
