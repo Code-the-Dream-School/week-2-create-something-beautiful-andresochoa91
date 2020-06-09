@@ -20,6 +20,14 @@ a {
   color: #f7cac9;
 }
 
+span a{
+  -webkit-text-stroke: .8px #fff; 
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #f18973;
+  text-shadow: 5px 5px 3px #337, -5px 5px 3px #337;
+}
+
 .container {
   position: relative;
 }
