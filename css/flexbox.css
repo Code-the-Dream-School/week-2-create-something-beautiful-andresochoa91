@@ -24,12 +24,17 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .mw { /* max width */
   width: 95%;
   max-width: 1200px;
   margin: auto;
+}
+
+.order1 {
+  order: 1;
 }
 
 .btn {
@@ -176,8 +181,14 @@ header nav ul li a:hover {
   color: #f0f0f0;
   border-bottom: 3px #c94c4c solid;
 }
+
 header #nav-con {
+  flex-wrap: nowrap;
   justify-content: space-between;
+}
+
+header #nav-con .container {
+  flex-wrap: nowrap;
 }
 
 header nav img {
