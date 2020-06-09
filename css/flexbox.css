@@ -50,16 +50,12 @@ a {
   background-color: #f7cac9;
 }
 
-.thumbnail {
-  margin: 0 10px 10px 10px;
-}
-
 .article-content {
   width: 50%;
 }
 
 .card {
-  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
   background-color: #87bdd8;
   color: #034f84;
@@ -163,7 +159,7 @@ header {
 
 header nav h2 {
   cursor: pointer;
-  margin: 20px;
+  margin: 20px 0;
   color: #f7786b;
 }
 
@@ -239,18 +235,20 @@ header nav img {
 
 article {
   flex-direction: column;
-  width: 100%;
   background-color: #034f84;
   font-size: 1em;
   color: #f7cac9;
-  padding: 30px;
   margin-top: 80px;
   box-shadow: 15px 15px 15px #888888, -15px -15px 15px #888888, 15px -15px 15px #888888, -15px 15px 15px #888888;
 }
 
+article div {
+  justify-content: space-between;
+}
+
 article p {
-  margin: 20px;
   text-align: justify;
+  padding: 10px;
 }
 
 article button {
@@ -258,7 +256,6 @@ article button {
 }
 
 article img {
-  margin: auto 20px;
   width: 45%;
 }
 
@@ -268,6 +265,7 @@ article img {
   flex-direction: column;
   background-color: #034f84;
   padding: 50px 0;
+  margin: 80px auto;
   box-shadow: 15px 15px 15px #888888, -15px -15px 15px #888888, 15px -15px 15px #888888, -15px 15px 15px #888888;
 }
 
@@ -334,8 +332,14 @@ footer #footer-content {
     font-size: 1.4em;
   }
 
+  article .article-content {
+    display: flex;
+    flex-direction: column;
+  }
+
   .article-content,
   article img {
+    order: -1 !important;
     width: 100%;
   }
   
@@ -350,6 +354,7 @@ footer #footer-content {
   }
   
   article button {
+    justify-content: center;
     margin: auto;
     width: 30%;
   }
@@ -368,13 +373,9 @@ footer #footer-content {
 
 @media (max-width: 670px) {
 
-  header {
-    text-align: center;
-  }
-
   header h2 {
     margin: 5px !important;
-    padding: 2px;
+    padding: 5px;
   }
 
   header nav ul {
@@ -387,7 +388,9 @@ footer #footer-content {
     margin: 0;
   }
 
-  header #profile-pic {
+  header img {
+    height: 35px !important;
+    width: 35px !important;
   }
 
   .card {
@@ -409,16 +412,34 @@ footer #footer-content {
   }
 }
 
-@media (max-width: 500px) {
-  header nav ul, header nav ul li, header nav ul a {
+@media (max-width: 520px) {
+  header div, header div div, header h2 {
+    flex-direction: column !important;
+    text-align: center;
+    margin: auto;
+    padding: 1px;
   }
   
-  #showcase {
-    margin-top: 180px;
-
+  header ul {
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    margin: 5px; 
   }
 
-  #profile-pic {
+  header ul a {
+    padding: 0 10px !important;
+  }
+  
+  header img {
+    position: absolute;
+    right: 10px;
+    top: 11px;
+  }
+
+  #showcase {
+    margin-top: 140px;
+
   }
 
   article p {
@@ -441,13 +462,29 @@ footer #footer-content {
   }
 }
 
+@media (max-width: 400px) {
+  header nav ul {
+    flex-direction: column !important;
+    height: 80px;
+  }
+
+  header nav ul li {
+  }
+  
+  header nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 5px !important;
+  }
+}
+
 @media (min-width: 1px) {
-  article, .card {
+  .card {
     margin-top: 30px;
   }
 
   article {
-    padding: 20px 0;
+    padding: 50px 0;
   }
 
   article button {
