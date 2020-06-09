@@ -135,10 +135,11 @@ a {
   color: white;
 }
 
-#social-media {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
+:target + .container {
+  box-shadow: 20px 20px 15px #034f84,
+  -20px -20px 15px #034f84,
+  20px -20px 15px #034f84,
+  -20px 20px 15px #034f84 !important;
 }
 
 header {
@@ -284,10 +285,7 @@ article img {
   background-color: #034f84;
   margin: 120px auto;
   padding: 50px 0;
-  box-shadow: 15px 15px 15px #888888,
-              -15px -15px 15px #888888,
-              15px -15px 15px #888888,
-              -15px 15px 15px #888888;
+  box-shadow: 15px 15px 15px #888888, -15px -15px 15px #888888, 15px -15px 15px #888888, -15px 15px 15px #888888;
 }
 
 #cards #act-heading {
@@ -306,7 +304,35 @@ footer {
 
 footer address, footer p {
   display: inline-block;
-  margin: 22px 20px;
+  margin: 22px 10px;
+}
+
+#social-media {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+@media (max-width: 1000px) {
+
+  #footer-content {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+  #social-media {
+    position: relative;
+    text-align: center;
+  }
+
+  footer {
+    height: 120px;
+  }
+
+  footer address, footer p {
+    margin: 5px;
+  }
 }
 
 @media (max-width: 910px) {
@@ -343,20 +369,13 @@ footer address, footer p {
   }
 }
 
-:target + .container {
-  box-shadow: 20px 20px 15px #034f84,
-  -20px -20px 15px #034f84,
-  20px -20px 15px #034f84,
-  -20px 20px 15px #034f84 !important;
-}
-
 @media (max-width: 768px) {
   article {
     font-size: 1em;
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 670px) {
 
   header {
     text-align: center;
@@ -391,11 +410,26 @@ footer address, footer p {
   .card:hover {
     transform: none;
   }
+
+  footer {
+    font-size: .9em;
+    height: 100px;
+  }
+
+  .fa {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 @media (max-width: 500px) {
   header nav ul, header nav ul li, header nav ul a {
     display: block !important;
+  }
+  
+  #showcase {
+    margin-top: 180px;
+
   }
 
   #profile-pic {
@@ -405,6 +439,21 @@ footer address, footer p {
 
   article p {
     margin: 1px 1px 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  footer {
+    height: 125px;
+  }
+
+  #social-media {
+    font-size: .9em;
+  }
+
+  .fa {
+    width: 40px;
+    height: 40px;
   }
 }
 
