@@ -273,6 +273,7 @@ article img {
 }
 
 footer {
+  align-content: center;
   font-size: 1.2em;
   background-color: #034f84;
   color: #f7cac9;
@@ -281,10 +282,19 @@ footer {
 }
 
 footer address, footer p {
+  display: inline-block;
   margin: 22px 10px;
 }
 
-#social-media {
+footer #foo {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer #footer-content {
+  flex-direction: row;
+  order: -1;
+  align-self: center;
 }
 
 @media (max-width: 1000px) {
