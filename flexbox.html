@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Something Beautiful</title>
-    <meta name="author" content="name">
-    <meta name="description" content="description here">
-    <meta name="keywords" content="keywords,here">
+    <title>Something Beautiful With Flexbox</title>
+    <meta name="author" content="Johan Ochoa">
+    <meta name="description" content="something beaufiful">
+    <meta name="keywords" content="something beautiful floats flexbox">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/flexbox.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet"> 
@@ -18,7 +18,7 @@
       <header>
         <nav>
           <div class="mw container" id="nav-con"">
-            <div class="container">
+            <div class="container" id="nav-text-con">
               <h2 class="trans1">CTD</h2>
               <ul class="container">
                 <li><a href="#pre0">Home</a></li>
@@ -37,19 +37,18 @@
         <div id="pre0" class="pre container"></div>
         <section class="container" id="showcase">
           <div class="container mw" id="showcase-content">
-            <h1>FLEXBOX</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Voluptatem, dolorem laudantium? Quas nemo inventore amet illum quaenecessitatibus, ab beatae? <span><a href="./index.html">See with FLOATS</a></span></p>
+            <h1>MADE WITH FLEXBOX</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Voluptatem, dolorem laudantium? Quas nemo inventore amet illum quaenecessitatibus, ab beatae? <span><a href="./index.html">Click me to go to FLOATS</a></span></p>
           </div>
         </section class="container">
-
-        
+      
         <section class="container" id="articles">
 
           <div id="pre1" class="pre container"></div>
 
-          <article class="container" id="article1">
-            <div class="container mw">
-              <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F6NVCKeiqvtY%2Fmaxresdefault.jpg&f=1&nofb=1" alt="landscape" class="order1">
+          <article class="container">
+            <div class="container mw" id="article1">
+              <img src="./images/landscape1.jpeg" alt="landscape1" class="order1">
               <div class="article-content">
                 <h2>Article 1</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nulla illo tenetur nihil explicabo cupiditate quidem maiores ad optio laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem illo dolorum delectus error quam vitae distinctio molestias, sequi dignissimos accusantium atque officiis expedita? Quos nisi temporibus ipsam quisquam ab necessitatibus. lorem10 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, quasi perferendis dolore iste iusto commodi quidem illum labore quis, aut officiis consequatur praesentium dignissimos quas impedit odit ab eius ipsam assumenda quia, consectetur nostrum. Eveniet cum hic, dolorem dolorum eaque temporibus et exercitationem sit perferendis vel soluta placeat incidunt amet!</p>
@@ -62,7 +61,7 @@
 
           <article class="container" id="article2">
             <div class="container mw">
-              <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fak9.picdn.net%2Fshutterstock%2Fvideos%2F5380769%2Fthumb%2F1.jpg&f=1&nofb=1" alt="landscape">
+              <img src="./images/family.jpeg" alt="family">
               <div class="article-content order1">
                 <h2>Article 2</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, quasi perferendis dolore iste iusto commodi quidem illum labore quis, aut officiis consequatur praesentium dignissimos quas impedit odit ab eius ipsam assumenda quia, consectetur nostrum. Eveniet cum hic, dolorem dolorum eaque temporibus et exercitationem sit perferendis vel soluta placeat incidunt amet!</p>
@@ -72,16 +71,13 @@
           </article>
         </section>
         
-        
         <div id="pre3" class="pre container"></div>
 
         <section class="container" id="cards">
           <h2 id="act-heading">ACTIVITIES</h2>
-
           <div class="container mw" id="all-cards">
-
             <div class="container card trans2" id="card1">
-              <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fyoungpeopledo.files.wordpress.com%2F2014%2F01%2Fcm11.jpg&f=1&nofb=1" alt="activity">
+              <img src="./images/climbing.jpeg" alt="climbing">
               <div class="container card-content">
                 <h2>Card1</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione beatae quidem molestiae maiores tempore commodi? Ex in cum earum consequuntur.</p>
@@ -90,7 +86,7 @@
             </div>
   
             <div class="container card trans2" id="card2">
-              <img src="https://uploads-ssl.webflow.com/573150ef2ab7e0550daae5ea/576c676b6b511f9820b83594_twokayaksriver.jpg">
+              <img src="./images/kayaking.jpg" alt="kayaking">
               <div class="container card-content">
                 <h2>Card2</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione beatae quidem molestiae maiores tempore commodi? Ex in cum earum consequuntur.</p>
@@ -99,7 +95,7 @@
             </div>
   
             <div class="container card trans2" id="card3">
-              <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbackroads-web.s3.amazonaws.com%2Fimages%2Ftrips%2F2018%2Fslideshow%2FWDMI-dolomites-walking-hiking-tour-4.jpg&f=1&nofb=1" alt="activity">
+              <img src="./images/trekking.jpeg" alt="trekking">
               <div class="container card-content">  
                 <h2>Card3</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione beatae quidem molestiae maiores tempore commodi? Ex in cum earum consequuntur.</p>
@@ -108,29 +104,25 @@
             </div>
   
             <div class="container card trans2" id="card4">
-              <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbelize-travel-blog.chaacreek.com%2Fwp-content%2Fuploads%2F2015%2F10%2Fbelize-kids-snorkeling.jpg&f=1&nofb=1" alt="activity">
+              <img src="./images/diving.jpeg" alt="diving">
               <div class="container card-content">
                 <h2>Card4</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione beatae quidem molestiae maiores tempore commodi? Ex in cum earum consequuntur.</p>
               </div>
               <button class="btn">More info</button>
             </div>
-
           </div>
-
         </section>
-
       </main>
-      
     </div>
     <footer class="container">
       <div class="mw container" id="foo">
         <div id="social-media">
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-google"></a>
-          <a href="#" class="fa fa-linkedin"></a>
-          <a href="#" class="fa fa-instagram"></a>
+          <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+          <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+          <a href="https://www.google.com" class="fa fa-google"></a>
+          <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
+          <a href="https://www.instagram.com" class="fa fa-instagram"></a>
         </div>
         <div id="footer-content">
           <p>&copy; 2020 Code the Dream.</p>
@@ -138,8 +130,6 @@
         </div>
       </div>
     </footer>
-
-
     <script src="index.js" type="text/javascript"></script>
   </body>
 </html>

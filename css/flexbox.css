@@ -21,11 +21,12 @@ a {
 }
 
 span a{
-  -webkit-text-stroke: .8px #fff; 
+  -webkit-text-stroke: .8px #333; 
   font-size: 1.2em;
+  font-family: 'Berkshire Swash', cursive;
   font-weight: bold;
   color: #f18973;
-  text-shadow: 5px 5px 3px #337, -5px 5px 3px #337;
+  text-shadow: 5px 5px 3px #337, -5px 5px 3px #337, 5px -5px 3px #337, -5px -5px 3px #337;
 }
 
 .container {
@@ -63,14 +64,14 @@ span a{
 }
 
 .card {
-  justify-content: space-between;
-  text-align: center;
   background-color: #87bdd8;
   color: #034f84;
+  text-align: center;
   font-size: .9em;
+  justify-content: space-between;
   border: 1px #777 solid;
-  width: 270px;
   margin: 10px;
+  width: 270px;
 }
 
 .card img {
@@ -208,7 +209,7 @@ header nav img {
   text-align: center;
   margin-top: 60px;
   height: 500px;
-  background: linear-gradient(to top, transparent, transparent, #034f84), url("https://get.pxhere.com/photo/background-calm-clouds-daylight-dock-environment-grass-lake-landscape-looking-man-mountain-mountains-outdoors-person-reflections-rocks-scenery-scenic-serene-sitting-sky-tranquil-trees-view-water-wooden-woods-1563785.jpg") no-repeat center/cover;
+  background: linear-gradient(to top, transparent, transparent, #034f84), url("../images/landscape.jpg") no-repeat center/cover;
   box-shadow: 15px 15px 15px #888888,
   -15px -15px 15px #888888,
   15px -15px 15px #888888,
@@ -246,7 +247,7 @@ article {
   box-shadow: 15px 15px 15px #888888, -15px -15px 15px #888888, 15px -15px 15px #888888, -15px 15px 15px #888888;
 }
 
-article div {
+article .container {
   justify-content: space-between;
 }
 
@@ -262,7 +263,6 @@ article button {
 article img {
   width: 45%;
 }
-
 
 #cards {
   width: 100%;
@@ -311,24 +311,23 @@ footer #footer-content {
 }
 
 @media (max-width: 1000px) {
+  footer {
+    height: 120px;
+  }
 
-  #foo {
+  footer #foo {
     flex-direction: column;
   }
 
-  #footer-content {
+  footer #social-media {
+    margin: auto;
+  }
+  
+  footer #footer-content {
     order: 1 !important;
     width: 100%;
     margin: auto;
     text-align: center;
-  }
-
-  #social-media {
-    margin: auto;
-  }
-
-  footer {
-    height: 120px;
   }
 
   footer address, footer p {
@@ -381,6 +380,18 @@ footer #footer-content {
 }
 
 @media (max-width: 670px) {
+  .card {
+    transition: none;
+  }
+
+  .card:hover {
+    transform: none;
+  }
+
+  .fa {
+    width: 50px;
+    height: 50px;
+  }
 
   header h2 {
     margin: 5px !important;
@@ -402,27 +413,23 @@ footer #footer-content {
     width: 35px !important;
   }
 
-  .card {
-    transition: none;
-  }
-
-  .card:hover {
-    transform: none;
+  #showcase {
+    margin-top: 40px;
   }
 
   footer {
     font-size: .9em;
-    height: 100px;
-  }
-
-  .fa {
-    width: 50px;
-    height: 50px;
+    height: 120px;
   }
 }
 
 @media (max-width: 520px) {
-  header div, header div div, header h2 {
+  .fa {
+    width: 40px;
+    height: 40px;
+  }
+
+  header #nav-con, header #nav-con #nav-text-con, header h2 {
     flex-direction: column !important;
     text-align: center;
     margin: auto;
@@ -446,30 +453,15 @@ footer #footer-content {
     top: 11px;
   }
 
-  #showcase {
-    margin-top: 70px;
-  }
-
   article p {
     margin: 1px 1px 20px;
-  }
-
-  .fa {
-    width: 40px;
-    height: 40px;
   }
 }
 
 @media (max-width: 450px) {
-
-  #showcase {
-    margin-top: 80px;
-  }
-
   #social-media {
     font-size: .9em;
   }
-
 }
 
 @media (max-width: 400px) {
@@ -477,15 +469,15 @@ footer #footer-content {
     flex-direction: column !important;
     height: 80px;
   }
-
-  #showcase {
-    margin-top: 140px;
-  }
   
   header nav ul li a {
     display: block;
     width: 100%;
     padding: 5px !important;
+  }
+
+  #showcase {
+    margin-top: 120px;
   }
 }
 
@@ -497,7 +489,7 @@ footer #footer-content {
   article {
     padding: 50px 0;
   }
-
+  
   article button {
     min-width: 150px;
     margin-bottom: 20px;

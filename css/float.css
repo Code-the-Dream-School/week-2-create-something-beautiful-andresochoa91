@@ -21,11 +21,12 @@ a {
 }
 
 span a{
-  -webkit-text-stroke: .8px #fff; 
+  -webkit-text-stroke: .8px #333; 
   font-size: 1.2em;
   font-weight: bold;
+  font-family: 'Berkshire Swash', cursive;
   color: #f18973;
-  text-shadow: 5px 5px 3px #337, -5px 5px 3px #337;
+  text-shadow: 5px 5px 3px #337, -5px 5px 3px #337, 5px -5px 3px #337, -5px -5px 3px #337;
 }
 
 .container {
@@ -150,6 +151,20 @@ span a{
   -20px 20px 15px #034f84 !important;
 }
 
+.trans1, .trans2 {
+  transition: transform 0.3s;
+  z-index: 2;
+}
+
+.trans1:hover {
+  transform: scale(1.3);
+}
+
+.trans2:hover {
+  transform: scale(1.1);
+}
+
+
 header {
   position: fixed;
   width: 100%;
@@ -185,20 +200,6 @@ header nav img {
   border: 1px #f7cac9 solid;
 }
 
-.trans1, .trans2 {
-  transition: transform 0.3s;
-  z-index: 2;
-}
-
-
-.trans1:hover {
-  transform: scale(1.3);
-}
-
-.trans2:hover {
-  transform: scale(1.1);
-}
-
 header nav ul {
   position: absolute;
 }
@@ -218,11 +219,10 @@ header nav ul li a:hover {
   border-bottom: 3px #c94c4c solid;
 }
 
-
 #showcase {
   text-align: center;
   height: 500px;
-  background: linear-gradient(to top, transparent, transparent, #034f84), url("https://get.pxhere.com/photo/background-calm-clouds-daylight-dock-environment-grass-lake-landscape-looking-man-mountain-mountains-outdoors-person-reflections-rocks-scenery-scenic-serene-sitting-sky-tranquil-trees-view-water-wooden-woods-1563785.jpg") no-repeat center/cover;
+  background: linear-gradient(to top, transparent, transparent, #034f84), url("../images/landscape.jpg") no-repeat center/cover;
   box-shadow: 15px 15px 15px #888888,
   -15px -15px 15px #888888,
   15px -15px 15px #888888,
@@ -315,7 +315,7 @@ footer address, footer p {
   margin: 22px 10px;
 }
 
-#social-media {
+footer #social-media {
   position: absolute;
   bottom: 0px;
   right: 0px;
@@ -323,21 +323,21 @@ footer address, footer p {
 
 @media (max-width: 1000px) {
 
-  #footer-content {
+  footer {
+    height: 120px;
+  }
+
+  footer #footer-content {
     width: 100%;
     margin: auto;
     text-align: center;
   }
 
-  #social-media {
+  footer #social-media {
     position: relative;
     text-align: center;
   }
-
-  footer {
-    height: 120px;
-  }
-
+  
   footer address, footer p {
     margin: 5px;
   }
@@ -352,6 +352,8 @@ footer address, footer p {
   article img {
     float: none !important;
     width: 100%;
+    margin: auto !important;
+    text-align: center;
   }
   
   article h2 {
@@ -370,20 +372,27 @@ footer address, footer p {
     margin: auto;
     width: 30%;
   }
-
-  article img {
-    margin: auto !important;
-    text-align: center;
-  }
 }
 
 @media (max-width: 768px) {
   article {
-    font-size: 1em;
+    font-size: .9em;
   }
 }
 
 @media (max-width: 670px) {
+  .card {
+    transition: none;
+  }
+
+  .card:hover {
+    transform: none;
+  }
+
+  .fa {
+    width: 50px;
+    height: 50px;
+  }
 
   header {
     text-align: center;
@@ -411,22 +420,10 @@ footer address, footer p {
     top: 12px;
   }
 
-  .card {
-    transition: none;
-  }
-
-  .card:hover {
-    transform: none;
-  }
 
   footer {
     font-size: .9em;
     height: 100px;
-  }
-
-  .fa {
-    width: 50px;
-    height: 50px;
   }
 }
 
@@ -435,14 +432,13 @@ footer address, footer p {
     display: block !important;
   }
   
-  #showcase {
-    margin-top: 180px;
-
-  }
-
-  #profile-pic {
+  header #profile-pic {
     right: 1px;
     top: 4px;
+  }
+
+  #showcase {
+    margin-top: 180px;
   }
 
   article p {
@@ -451,17 +447,17 @@ footer address, footer p {
 }
 
 @media (max-width: 450px) {
+  .fa {
+    width: 40px;
+    height: 40px;
+  }
+
   footer {
     height: 125px;
   }
 
-  #social-media {
+  footer #social-media {
     font-size: .9em;
-  }
-
-  .fa {
-    width: 40px;
-    height: 40px;
   }
 }
 
