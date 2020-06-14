@@ -213,7 +213,7 @@ header nav ul li a {
   padding: 22px 10px;
 }
 
-header nav ul li a:hover {
+.active, header nav ul li a:hover {
   background-color: #92a8d1;
   color: #f0f0f0;
   border-bottom: 3px #c94c4c solid;
